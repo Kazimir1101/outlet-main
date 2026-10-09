@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    touch-action: pan-x pan-y;
+    -ms-touch-action: pan-x pan-y;
+}
+
 html {
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -14,6 +20,21 @@ body {
     color: #17191c;
     padding-bottom: 100px;
 }
+
+/**/
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+/* Фокус показываем только при клавиатурной навигации */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #ff5a36;
+    outline-offset: 2px;
+}
+/**/
 
 button,
 input {
