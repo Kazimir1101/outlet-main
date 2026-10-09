@@ -2,9 +2,8 @@
 <html lang="az">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Outlet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Outlet - Əsas səhifə</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +15,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,7 +30,7 @@
     <header class="header">
 
         <div class="logo">
-            <span>outlet</span>
+            <span>Outlet</span>
         </div>
 
         <button class="header-menu">
@@ -122,8 +123,9 @@
 
         <div class="section-header">
 
-            <div>
-                <h3>Kateqoriyalar</h3>
+            <div style="display: flex;">
+                <i class="ri-layout-grid-fill" style="color:#ff5a36;"></i>
+                <h3 style="padding-left:5px;">Kateqoriyalar</h3>
             </div>
 
             <button class="see-all open-categories-modal">
@@ -136,18 +138,17 @@
 
         <div class="categories">
 
-            <div class="category-box">
-
+            <a href="/categories/category.html?category=sirniyyat" class="category-box">
                 <div class="category-icon sweets">
                     <i class="fa-solid fa-cake-candles"></i>
                 </div>
 
                 <span>Şirniyyat</span>
 
-            </div>
+            </a>
 
 
-            <div class="category-box">
+            <a href="/categories/category.html?category=geyim" class="category-box">
 
                 <div class="category-icon fashion">
                     <i class="fa-solid fa-shirt"></i>
@@ -155,10 +156,10 @@
 
                 <span>Geyim</span>
 
-            </div>
+            </a>
 
 
-            <div class="category-box">
+            <a href="/categories/category.html?category=ayaqqabi" class="category-box">
 
                 <div class="category-icon shoes">
                     <i class="fa-solid fa-shoe-prints"></i>
@@ -166,10 +167,10 @@
 
                 <span>Ayaqqabı</span>
 
-            </div>
+            </a>
 
 
-            <div class="category-box">
+            <a href="/categories/category.html?category=guller" class="category-box">
 
                 <div class="category-icon flowers">
                     <i class="fa-solid fa-leaf"></i>
@@ -177,10 +178,10 @@
 
                 <span>Güllər</span>
 
-            </div>
+            </a>
 
 
-            <div class="category-box">
+            <a href="/categories/category.html?category=elektronika" class="category-box">
 
                 <div class="category-icon electronics">
                     <i class="fa-solid fa-mobile-screen-button"></i>
@@ -188,10 +189,10 @@
 
                 <span>Elektronika</span>
 
-            </div>
+            </a>
 
 
-            <div class="category-box">
+            <a href="/categories/category.html?category=diger" class="category-box">
 
                 <div class="category-icon other">
                     <i class="fa-solid fa-dice"></i>
@@ -199,12 +200,183 @@
 
                 <span>Digər</span>
 
-            </div>
+            </a>
 
         </div>
 
     </section>
 
+    <!-- ================= TIMELESS ADS ================= -->
+
+    <section class="ads-section">
+
+        <div class="section-header">
+
+            <div style="display: flex; align-items: center;margin-left:1px;">
+                <i class="fa-solid fa-clock" style="color:#ff5a36; font-size:14px;"></i>
+                <h3 style="padding-left:5px;">Tezliklə bitəcək</h3>
+            </div>
+
+        </div>
+
+        <div class="last-ads-box" id="timeless-ads-box">
+
+            <!-- AD 1 -->
+
+            <article class="last-ad" 
+            data-images="
+            https://nikefans.ru/wp-content/uploads/2022/11/nike-dunk.jpg,
+            https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/c3eb4fe4-3e3e-45db-b5e6-eb120c3c0e42/NIKE+CORTEZ.png,
+            https://cdn5.focus.bg/bazar/22/pics/22003d9483cec10f23972e83c3a0a95b.webp
+        ">
+
+                <div class="ad-image">
+
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,c_scale,w_300,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3a9956db-f7b5-4f2f-a92c-7f3c6905d6a0/NIKE+PRECISION+8+MID.png">
+
+                </div>
+
+                <div class="ad-content">
+
+                    <h3>Premum məhsul Premum məhsul 30</h3>
+
+                    <p class="ad-description">
+                        Yeni və keyfiyyətli.Yeni və keyfiyyətli.Yeni və keyfiyyətli.Yeni və keyfiyyətli.Yeni və keyfiyyətli.Yeni və keyfiyyətli.Yeni və keyfiyyətli.Yeni və150
+                    </p>
+
+                    <div class="price-row">
+
+                        <span class="old-price">
+                            150 ₼
+                        </span>
+
+                        <strong class="new-price">
+                            110 ₼
+                        </strong>
+
+                    </div>
+
+                    <div class="ad-info">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Qusar
+                        </span>
+
+                        <span>
+                            12.10.2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- AD 2 -->
+
+            <article class="last-ad"
+            data-images="
+            https://nikefans.ru/wp-content/uploads/2022/11/nike-dunk.jpg,
+            https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/c3eb4fe4-3e3e-45db-b5e6-eb120c3c0e42/NIKE+CORTEZ.png,
+            https://cdn5.focus.bg/bazar/22/pics/22003d9483cec10f23972e83c3a0a95b.webp
+            ">
+
+                <div class="ad-image">
+
+                    <img src="https://cdn.pixabay.com/photo/2020/07/15/18/26/footwear-5408643_1280.jpg">
+
+                </div>
+
+                <div class="ad-content">
+
+                    <h3>Yeni məhsul</h3>
+
+                    <p class="ad-description">
+                        Əla vəziyyətdədir
+                    </p>
+
+                    <div class="price-row">
+
+                        <span class="old-price">
+                            95 ₼
+                        </span>
+
+                        <strong class="new-price">
+                            80 ₼
+                        </strong>
+
+                    </div>
+
+                    <div class="ad-info">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Qusar
+                        </span>
+
+                        <span>
+                            12.10.2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- AD 3 -->
+
+            <article class="last-ad">
+
+                <div class="ad-image">
+
+                    <img src="https://www.apple.com/newsroom/images/2023/09/apple-introduces-the-advanced-new-apple-watch-series-9/article/Apple-Watch-S9-gold-stainless-steel-Sport-Band-purple-230912_inline.jpg.large_2x.jpg">
+
+                </div>
+
+                <div class="ad-content">
+
+                    <h3>Smart cihaz</h3>
+
+                    <p class="ad-description">
+                        Az istifadə olunub
+                    </p>
+
+                    <div class="price-row">
+
+                        <span class="old-price">
+                            50 ₼
+                        </span>
+
+                        <strong class="new-price">
+                            10 ₼
+                        </strong>
+
+                    </div>
+
+                    <div class="ad-info">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Xaçmaz
+                        </span>
+
+                        <span>
+                            11.10.2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>          
+
+        </div>
+
+    </section>
 
     <!-- ================= NEW ADS ================= -->
 
@@ -212,13 +384,14 @@
 
         <div class="section-header">
 
-            <div>
-                <h3>Yeni elanlar</h3>
+            <div style="display: flex; align-items: center;">
+                <i class="ri-megaphone-fill" style="color:#ff5a36;"></i>
+                <h3 style="padding-left:3px;">Yeni elanlar</h3>
             </div>
 
         </div>
 
-        <div class="last-ads-box">
+        <div class="last-ads-box" id="last-ads-box">
 
             <!-- AD 1 -->
 
@@ -534,7 +707,7 @@
         <div class="modal-categories">
 
 
-            <a href="#" class="modal-category">
+            <a href="/categories/category.html?category=sirniyyat" class="modal-category">
 
                 <div class="modal-category-icon sweets">
                     <i class="fa-solid fa-cake-candles"></i>
@@ -549,7 +722,7 @@
             </a>
 
 
-            <a href="#" class="modal-category">
+            <a href="/categories/category.html?category=geyim" class="modal-category">
 
                 <div class="modal-category-icon fashion">
                     <i class="fa-solid fa-shirt"></i>
@@ -564,7 +737,7 @@
             </a>
 
 
-            <a href="#" class="modal-category">
+            <a href="/categories/category.html?category=ayaqqabi" class="modal-category">
 
                 <div class="modal-category-icon shoes">
                     <i class="fa-solid fa-shoe-prints"></i>
@@ -579,7 +752,7 @@
             </a>
 
 
-            <a href="#" class="modal-category">
+            <a href="/categories/category.html?category=guller" class="modal-category">
 
                 <div class="modal-category-icon flowers">
                     <i class="fa-solid fa-leaf"></i>
@@ -594,7 +767,7 @@
             </a>
 
 
-            <a href="#" class="modal-category">
+            <a href="/categories/category.html?category=elektronika" class="modal-category">
 
                 <div class="modal-category-icon electronics">
                     <i class="fa-solid fa-mobile-screen-button"></i>
@@ -608,7 +781,7 @@
 
             </a>
 
-            <a href="#" class="modal-category">
+            <a href="/categories/category.html?category=diger" class="modal-category">
 
                 <div class="modal-category-icon other">
                     <i class="fa-solid fa-dice"></i>
